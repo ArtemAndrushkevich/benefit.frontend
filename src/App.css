@@ -16,7 +16,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: bisque;
+  background-color: #dcb9ff;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   height: 40px;
@@ -40,13 +40,12 @@ body {
   padding: 14px 18px;
 }
 .search {
-  background-color: rgb(242, 242, 252);
+  background-color: #edeff0;
   font-size: 14px;
     width: 500px;
     height: 25px;
     border: none;
     outline: none;
-    border-radius: 10cm;
-  text-align: center;
-  
+    border-radius: 1.6rem;
+  text-align: center;  
 }

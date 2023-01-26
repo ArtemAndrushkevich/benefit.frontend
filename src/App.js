@@ -1,14 +1,14 @@
-import './App.css'; 
-
+import './App.css';
 function App() {
   return (
     <div>
       <header>
-      <div classNameName="header">
+        
+      <div className="header">
         <div className="conteiner"> 
         <div className="header-line">
                 <div className="header-logo">
-                <img src="logo.png" width="50" height="50" alt="" />
+                <img src="logo.png" width="50" height="50" alt="@" className='logo'/>
                 </div>    
                 <div className="nav">
                     <a className="nav-item" href="@">Главная</a>
@@ -24,8 +24,10 @@ function App() {
                 </div>
                 <div className="cart">
                     <a href="@">
-                        <img src="cart.png" width="30" height="30" alt="" />
+                        <img src="cart.png" width="30" height="30" alt="cart" />
+                        
                     </a>
+                   
                 </div>
                 {/* <div className="btn"> 
                     <a className="button" href="@">Скачать</a>
