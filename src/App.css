@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
 body {
   margin: 0;
 }
@@ -16,7 +17,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #dcb9ff;
+  background-color: #b4ffbd;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   height: 40px;
@@ -49,3 +50,130 @@ body {
     border-radius: 1.6rem;
   text-align: center;  
 }
+
+.header-down {
+  background-color: #b4ffbd;
+  height: 400px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin: 0px 0px;
+}
+
+.title {
+  font-family: 'PT Serif', serif;
+  text-align: center;
+  padding-top: 15px;
+}
+.shops {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px;
+  
+}
+.shop1 {
+ 
+  height: 250px;
+  width: 150px;
+  display: flex;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+    
+   
+  
+}
+.shop2 {
+  height: 250px;
+  width: 150px;
+  display: flex;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+}
+.shop3 {
+  height: 250px;
+  width: 150px;
+  display: flex;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+}
+.shop4 {
+  height: 250px;
+  width: 150px;
+  display: flex;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+}
+.shop5 {
+  height: 250px;
+  width: 150px;
+  display: flex;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+}
+.card-title {
+  font-size: 20px;
+  text-align: center;
+  padding: 100px 35px;
+  position: absolute;
+  top: 50px;
+ 
+}
+.title2 {
+  text-align: center;
+  margin: 40px;
+  padding-top: 70px 100px 100px;
+  
+}
+.categories {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px;
+  white-space: normal;
+  flex-wrap: wrap;
+}
+.categories-title {
+  font-size: 20px;
+  text-align: center;
+  background-color: #b4ffbd;
+  width: 150px;
+  height: 150px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  padding: 20px;
+  
+  
+  
+  
+}
+.card-img {
+  margin: 100px 0px 0px 50px;
+}
+
