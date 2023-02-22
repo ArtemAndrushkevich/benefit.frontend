@@ -1,88 +1,81 @@
 import './App.css';
 import Card from './components/card';
-import Categories from './components/categories';
-import logo from './Images/logo.png';
-import cart from './Images/cart.png';
+import Logo from './Images/logo.png';
+import Cart from './Images/cart.png';
 import Sosedi from './Images/sosedi.png';
-import evroopt from './Images/evroopt.png';
-import green from './Images/green.png';
-import emall from './Images/emall.png';
-import vitalur from './Images/vitalur.png';
+import Evroopt from './Images/evroopt.png';
+import Green from './Images/green.png';
+import Emall from './Images/emall.png';
+import Vitalur from './Images/vitalur.png';
+import Belmarket from './Images/belmarket.png';
+import Kopeechka from './Images/kopeechka.png';
+import Santa from './Images/santa.png';
+import Gippo from './Images/gippo.png';
+import like from './Images/like.png';
+import banans from './Images/banans.png';
 
 function App() {
   return (
-    <div>
-      <header>
-
-        <div className="header">
-          <div className="conteiner">
-            <div className="header-line">
-              <div className="header-logo">
-                <img src={logo} width="50" height="50" alt="@" className="logo" />
-              </div>
-              <div className="nav">
-                <a className="nav-item" href="@">Главная</a>
-                <a className="nav-item" href="@">О нас</a>
-                <a className="nav-item" href="@">Новости</a>
-                <a className="nav-item" href="@">Листовки</a>
-              </div>
-              <div className="search">
-                <form>
-                  <input type="text" name="text" className="search" placeholder="Поиск" />
-                  {/* <input type="submit" name="submit" class="submit" value="Search">  */}
-                </form>
-              </div>
-              <div className="cart">
-                <a href="@">
-                  <img src={cart} width="30" height="30" alt="cart" />
-
-                </a>
-
-              </div>
-              {/* <div className="btn">
+    <header>
+      <div className="header">
+        <div className="conteiner">
+          <div className="header-line">
+            <img src={Logo} width="50" height="50" alt="@" className="logo" />
+            <div className="nav">
+              <a className="nav-item" href="@">Главная</a>
+              <a className="nav-item" href="@">О нас</a>
+              <a className="nav-item" href="@">Новости</a>
+              <a className="nav-item" href="@">Листовки</a>
+            </div>
+            <div className="search">
+              <form>
+                <input type="text" name="text" className="search" placeholder="Поиск" />
+              </form>
+            </div>
+            <div className="cart">
+              <a href="@">
+                <img src={Cart} width="30" height="30" alt="cart" />
+              </a>
+            </div>
+            {/* <div className="btn">
                     <a className="button" href="@">Скачать</a>
                 </div>  */}
+          </div>
+          <div className="header-down">
+            <div className="header-title">
+              <h1 className="title"> Benefit - поиск выгодных предложений в магазинах</h1>
             </div>
-            <div className="header-down">
-              <div className="header-title">
-                <h1 className="title"> Benefit - поиск выгодных предложений в магазинах</h1>
+            <div className="shops">
+              <Card title="Евроопт" img={Evroopt} />
+              <Card title="Грин" img={Green} />
+              <Card title="Виталюр" img={Vitalur} />
+              <Card title="Емолл" img={Emall} />
+              <Card title="Соседи" img={Sosedi} />
+              <Card title="Санта" img={Santa} />
+              <Card title="Копеечка" img={Kopeechka} />
+              <Card title="Белмаркет" img={Belmarket} />
+              <Card title="Гиппо" img={Gippo} />
+            </div>
+            <h1 className="title2"> Товары</h1>
+            <div className="products">
+              <div className="prodHeard">
+                <button className="buttonShop" type="submit">Виталюр</button>
+                <img src={like} alt="like" />
               </div>
-              <div className="shops">
-                <Card title="Евроопт" img={evroopt} />
-
-                <Card title="Грин" img={green} />
-                <Card title="Виталюр" img={vitalur} />
-                <Card title="Емолл" img={emall} />
-                <Card title="Соседи" img={Sosedi} />
-
+              <div><img width="80%" className="pictures" src={banans} alt="banana" /></div>
+              <div className="prodText">
+                <h2 className="price">2,99</h2>
+                <p>Бананы</p>
+                <span>0,76 л</span>
               </div>
-              <h1 className="title2"> Категории</h1>
-              <div className="categories">
-
-                <Categories title="Автотовары" />
-                <Categories title="Сад и огород" />
-                <Categories title="Промтовары" />
-                <Categories title="Вода, напитки, соки, кофе и чай" />
-                <Categories title="Алкоголь" />
-                <Categories title="Товары для детей и мам" />
-                <Categories title="Охлажденные продукты" />
-                <Categories title="Мясо, рыба, птица, колбасы" />
-                <Categories title="Овощи и фрукты" />
-                <Categories title="Шоколад и сладости" />
-                <Categories title="Бакалея" />
-                <Categories title="Молочные продукты, яйца" />
-                <Categories title="Здоровое и спортивное питание" />
-                <Categories title="Мебель" />
-                <Categories title="Хлебобулочные изделия" />
-
+              <div className="buttonAdd">
+                <button className="buttonAdd1" type="button">Добавить</button>
               </div>
-
             </div>
           </div>
         </div>
-      </header>
-    </div>
-
+      </div>
+    </header>
   );
 }
 
