@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
+
 body {
   margin: 0;
 }
@@ -89,9 +90,7 @@ body {
   top: 50px;
 }
 .title2 {
-  text-align: left;
-  margin: 40px;
-  padding-top: 70px 100px 100px;
+  padding: 13px 48px 0px 116px;
 }
 
 .card-img{
@@ -102,28 +101,6 @@ body {
 
 }
 
-.products {
-  margin: 20px;
-  height: 344px;
-  width: 190px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  background-color: #b4ffbd;
-  border: none;
-  outline: none;
-  display: flex;
-  flex-direction: column;
-  
-  
-}
-.prodHeard {
-  display: flex;
-  justify-content: space-between;
-  padding: 9px;
-  
-}
 .buttonShop {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -136,31 +113,15 @@ body {
   width: 65px;
   height: 20px;
 }
-.prodText {
-  
-}
-.price {
-  
-  margin: 0;
-}
-.pictures {
-  transform: scale(-1, 1);
-  padding-left: 20px;
-  padding-right: 20px;
-}
 
-.buttonAdd {
+
+
+.good {
   display: flex;
-  flex-direction: column;
-}
-.buttonAdd1 {
-  border: none;
-  cursor: pointer;
-  margin: 10px;
-  height: 40px;
-  border-radius: 20px;
+  padding: 0px 0px 0px 98px;
+ 
+  flex-wrap: wrap;
 }
 
- 
 
 

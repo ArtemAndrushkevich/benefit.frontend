@@ -19,6 +19,7 @@
     "rules": {
         // Since 17.XX.XX version of React don't need any more
     "react/jsx-uses-react": "off",
-    "react/react-in-jsx-scope": "off"
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off"
     }
 }

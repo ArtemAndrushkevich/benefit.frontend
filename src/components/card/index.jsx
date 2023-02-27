@@ -1,4 +1,3 @@
-// eslint-disable-next-line react/prop-types
 export default function Card({ title = '', img }) {
   return (
     <div className="shop">

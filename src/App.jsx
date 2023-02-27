@@ -1,5 +1,7 @@
+/* eslint-disable import/no-named-as-default */
 import './App.css';
 import Card from './components/card';
+import Good from './components/good';
 import Logo from './Images/logo.png';
 import Cart from './Images/cart.png';
 import Sosedi from './Images/sosedi.png';
@@ -11,14 +13,15 @@ import Belmarket from './Images/belmarket.png';
 import Kopeechka from './Images/kopeechka.png';
 import Santa from './Images/santa.png';
 import Gippo from './Images/gippo.png';
-import like from './Images/like.png';
 import banans from './Images/banans.png';
 
 function App() {
   return (
+
     <header>
       <div className="header">
         <div className="conteiner">
+
           <div className="header-line">
             <img src={Logo} width="50" height="50" alt="@" className="logo" />
             <div className="nav">
@@ -37,9 +40,7 @@ function App() {
                 <img src={Cart} width="30" height="30" alt="cart" />
               </a>
             </div>
-            {/* <div className="btn">
-                    <a className="button" href="@">Скачать</a>
-                </div>  */}
+
           </div>
           <div className="header-down">
             <div className="header-title">
@@ -57,20 +58,17 @@ function App() {
               <Card title="Гиппо" img={Gippo} />
             </div>
             <h1 className="title2"> Товары</h1>
-            <div className="products">
-              <div className="prodHeard">
-                <button className="buttonShop" type="submit">Виталюр</button>
-                <img src={like} alt="like" />
-              </div>
-              <div><img width="80%" className="pictures" src={banans} alt="banana" /></div>
-              <div className="prodText">
-                <h2 className="price">2,99</h2>
-                <p>Бананы</p>
-                <span>0,76 л</span>
-              </div>
-              <div className="buttonAdd">
-                <button className="buttonAdd1" type="button">Добавить</button>
-              </div>
+            <div className="good">
+              <Good img={banans} goodsName="Виталюр" name="Бананы" priсe="2,99" volume="0,76" />
+              <Good img={banans} goodsName="Виталюр" name="Бананы" priсe="2,99" volume="0,76" />
+              <Good img={banans} goodsName="Виталюр" name="Бананы" priсe="2,99" volume="0,76" />
+              <Good img={banans} goodsName="Виталюр" name="Бананы" priсe="2,99" volume="0,76" />
+              <Good img={banans} goodsName="Виталюр" name="Бананы" priсe="2,99" volume="0,76" />
+              <Good img={banans} goodsName="Виталюр" name="Бананы" priсe="2,99" volume="0,76" />
+              <Good img={banans} goodsName="Виталюр" name="Бананы" priсe="2,99" volume="0,76" />
+              <Good img={banans} goodsName="Виталюр" name="Бананы" priсe="2,99" volume="0,76" />
+              <Good img={banans} goodsName="Виталюр" name="Бананы" priсe="2,99" volume="0,76" />
+              <Good img={banans} goodsName="Виталюр" name="Бананы" priсe="2,99" volume="0,76" />
             </div>
           </div>
         </div>
