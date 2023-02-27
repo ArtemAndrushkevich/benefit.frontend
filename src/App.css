@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
+
 body {
   margin: 0;
 }
@@ -8,19 +10,16 @@ body {
   background-color: rgb(254, 254, 254);
   height: 100vh;
   background-size: cover;
-  
-  
 }
 .header-line {
-  padding-top: 10px;
+  padding-top: 0px;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: bisque;
+  background-color: #b4ffbd;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   height: 40px;
-  
 }
 .nav-item {
   color: rgb(0, 0, 0);
@@ -40,13 +39,89 @@ body {
   padding: 14px 18px;
 }
 .search {
-  background-color: rgb(242, 242, 252);
+  background-color: #edeff0;
   font-size: 14px;
     width: 500px;
     height: 25px;
     border: none;
     outline: none;
-    border-radius: 10cm;
-  text-align: center;
-  
+    border-radius: 1.6rem;
+  text-align: center;  
 }
+.header-down {
+  background-color: #b4ffbd;
+  height: 300px;
+  border-radius: 20px;
+  margin: 0;
+}
+.title {
+  font-family: 'PT Serif', serif;
+  text-align: center;
+  padding-top: 15px;
+}
+.shops {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px;
+}
+.shop {
+  height: 135px;
+  width: 135px;
+  display: flex;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+.card-title {
+  font-size: 20px;
+  text-align: center;
+  padding: 100px 35px;
+  position: absolute;
+  top: 50px;
+}
+.title2 {
+  padding: 13px 48px 0px 116px;
+}
+
+.card-img{
+  object-fit: contain;
+  padding: 5px;
+  width: 125px;
+  height: 80px;
+
+}
+
+.buttonShop {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #24348B;
+  color: #ffffff;
+  border: none;
+  text-align: center;
+  width: 65px;
+  height: 20px;
+}
+
+
+
+.good {
+  display: flex;
+  padding: 0px 0px 0px 98px;
+ 
+  flex-wrap: wrap;
+}
+
+
+

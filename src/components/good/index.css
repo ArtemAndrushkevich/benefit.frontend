@@ -1,0 +1,48 @@
+
+        .products {
+
+            margin: 20px;
+            padding: 10px;
+            height: 344px;
+            width: 190px;
+            border-radius: 20px;
+            background-color: #b4ffbd;
+            border: none;
+            outline: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          }
+          
+          .prodHeard {
+            display: flex;
+            justify-content: space-between;
+            padding: 9px;
+            
+          }
+         
+          .price {
+            
+            margin: 0;
+          }
+          .pictures {
+            transform: scale(-1, 1);
+            padding-left: 20px;
+            padding-right: 20px;
+          }
+          .buttonAdd {
+            display: flex;
+            flex-direction: column;
+          }
+          .buttonAdd1 {
+            border: none;
+            cursor: pointer;
+            margin: 10px;
+            height: 40px;
+            border-radius: 20px;
+          }
+          .favorite {
+            cursor: pointer;
+          }
+  
+  
