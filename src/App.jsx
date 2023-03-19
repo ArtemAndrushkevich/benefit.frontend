@@ -1,9 +1,9 @@
+/* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable import/no-named-as-default */
 import './App.css';
 import Card from './components/card';
 import Good from './components/good';
 import Logo from './Images/logo.png';
-import Cart from './Images/cart.png';
 import Sosedi from './Images/sosedi.png';
 import Evroopt from './Images/evroopt.png';
 import Green from './Images/green.png';
@@ -14,39 +14,99 @@ import Kopeechka from './Images/kopeechka.png';
 import Santa from './Images/santa.png';
 import Gippo from './Images/gippo.png';
 import banans from './Images/banans.png';
+import Sidebar from './components/sidebar';
+
+const goods = [
+  {
+    name: 'Виталюр',
+    product: 'Бананы',
+    priсe: 2.79,
+    volume: 0.76,
+  },
+  {
+    name: 'Соседи',
+    product: 'Бананы',
+    priсe: 2.79,
+    volume: 0.76,
+  },
+  {
+    name: 'Виталюр',
+    product: 'Бананы',
+    priсe: 2.79,
+    volume: 0.76,
+  },
+  {
+    name: 'Виталюр',
+    product: 'Бананы',
+    priсe: 2.79,
+    volume: 0.76,
+  },
+  {
+    name: 'Виталюр',
+    product: 'Бананы',
+    priсe: 2.79,
+    volume: 0.76,
+  },
+  {
+    name: 'Виталюр',
+    product: 'Бананы',
+    priсe: 2.79,
+    volume: 0.76,
+  },
+  {
+    name: 'Виталюр',
+    product: 'Бананы',
+    priсe: 2.79,
+    volume: 0.76,
+  },
+  {
+    name: 'Виталюр',
+    product: 'Бананы',
+    priсe: 2.79,
+    volume: 0.76,
+  },
+  {
+    name: 'Виталюр',
+    product: 'Бананы',
+    priсe: 2.79,
+    volume: 0.76,
+  },
+  {
+    name: 'Виталюр',
+    product: 'Бананы',
+    priсe: 2.79,
+    volume: 0.76,
+  },
+  {
+    name: 'Виталюр',
+    product: 'Бананы',
+    priсe: 2.79,
+    volume: 0.76,
+  },
+  {
+    name: 'Виталюр',
+    product: 'Бананы',
+    priсe: 2.79,
+    volume: 0.76,
+  },
+];
 
 function App() {
   return (
-
     <header>
-      <div className="header">
-        <div className="conteiner">
+      <div className="bg-white bg-cover h-skreen">
+        <div className="m-0">
 
-          <div className="header-line">
-            <img src={Logo} width="50" height="50" alt="@" className="logo" />
-            <div className="nav">
-              <a className="nav-item" href="@">Главная</a>
-              <a className="nav-item" href="@">О нас</a>
-              <a className="nav-item" href="@">Новости</a>
-              <a className="nav-item" href="@">Листовки</a>
-            </div>
-            <div className="search">
-              <form>
-                <input type="text" name="text" className="search" placeholder="Поиск" />
-              </form>
-            </div>
-            <div className="cart">
-              <a href="@">
-                <img src={Cart} width="30" height="30" alt="cart" />
-              </a>
-            </div>
-
+          <div className="flex items-center justify-center bg-green-300  h-14 rounded-b text-pink-300">
+            <img src={Logo} width="80" height="80" alt="@" />
+            <h1>Benefit</h1>
           </div>
-          <div className="header-down">
-            <div className="header-title">
-              <h1 className="title"> Benefit - поиск выгодных предложений в магазинах</h1>
-            </div>
-            <div className="shops">
+
+          <Sidebar />
+
+          <div className="bg-green-300 h-72 rounded-3xl m-10">
+            <h1 className="font-serif text-center "> Benefit - поиск выгодных предложений в магазинах</h1>
+            <div className="flex justify-between m-5">
               <Card title="Евроопт" img={Evroopt} />
               <Card title="Грин" img={Green} />
               <Card title="Виталюр" img={Vitalur} />
@@ -57,18 +117,19 @@ function App() {
               <Card title="Белмаркет" img={Belmarket} />
               <Card title="Гиппо" img={Gippo} />
             </div>
-            <h1 className="title2"> Товары</h1>
-            <div className="good">
-              <Good img={banans} goodsName="Виталюр" name="Бананы" priсe="2,99" volume="0,76" />
-              <Good img={banans} goodsName="Виталюр" name="Бананы" priсe="2,99" volume="0,76" />
-              <Good img={banans} goodsName="Виталюр" name="Бананы" priсe="2,99" volume="0,76" />
-              <Good img={banans} goodsName="Виталюр" name="Бананы" priсe="2,99" volume="0,76" />
-              <Good img={banans} goodsName="Виталюр" name="Бананы" priсe="2,99" volume="0,76" />
-              <Good img={banans} goodsName="Виталюр" name="Бананы" priсe="2,99" volume="0,76" />
-              <Good img={banans} goodsName="Виталюр" name="Бананы" priсe="2,99" volume="0,76" />
-              <Good img={banans} goodsName="Виталюр" name="Бананы" priсe="2,99" volume="0,76" />
-              <Good img={banans} goodsName="Виталюр" name="Бананы" priсe="2,99" volume="0,76" />
-              <Good img={banans} goodsName="Виталюр" name="Бананы" priсe="2,99" volume="0,76" />
+
+            <h1 className="text-3xl font-bold underline">Товары</h1>
+            <div className="flex bg-white flex-wrap">
+
+              {goods.map((product) => (
+                <Good
+                  img={banans}
+                  goodsName={product.name}
+                  name={product.product}
+                  priсe={product.priсe}
+                  volume={product.volume}
+                />
+              ))}
             </div>
           </div>
         </div>
