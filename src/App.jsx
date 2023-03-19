@@ -93,17 +93,20 @@ const goods = [
 
 function App() {
   return (
-    <header>
-      <div className="bg-white bg-cover h-skreen">
-        <div className="m-0">
-
-          <div className="flex items-center justify-center bg-green-300  h-14 rounded-b text-pink-300">
-            <img src={Logo} width="80" height="80" alt="@" />
-            <h1>Benefit</h1>
+    <div className="flex">
+      <Sidebar />
+      <div className="flex flex-col min-h-max">
+        <header>
+          <div className="bg-white bg-cover">
+            <div className="m-0">
+              <div className="flex items-center justify-center bg-green-300  h-14 rounded-b text-pink-300">
+                <img src={Logo} width="80" height="80" alt="@" />
+                <h1>Benefit</h1>
+              </div>
+            </div>
           </div>
-
-          <Sidebar />
-
+        </header>
+        <main>
           <div className="bg-green-300 h-72 rounded-3xl m-10">
             <h1 className="font-serif text-center "> Benefit - поиск выгодных предложений в магазинах</h1>
             <div className="flex justify-between m-5">
@@ -132,9 +135,9 @@ function App() {
               ))}
             </div>
           </div>
-        </div>
+        </main>
       </div>
-    </header>
+    </div>
   );
 }
 
