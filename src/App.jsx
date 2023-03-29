@@ -1,20 +1,20 @@
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable import/no-named-as-default */
+
 import './App.css';
 import Card from './components/card';
 import Good from './components/good';
-import Logo from './Images/logo.png';
 import Sosedi from './Images/sosedi.png';
 import Evroopt from './Images/evroopt.png';
 import Green from './Images/green.png';
 import Emall from './Images/emall.png';
-import Vitalur from './Images/vitalur.png';
 import Belmarket from './Images/belmarket.png';
 import Kopeechka from './Images/kopeechka.png';
 import Santa from './Images/santa.png';
 import Gippo from './Images/gippo.png';
 import banans from './Images/banans.png';
 import Sidebar from './components/sidebar';
+import Gallery from './components/gallery';
 
 const goods = [
   {
@@ -93,23 +93,31 @@ const goods = [
 
 function App() {
   return (
-    <header>
-      <div className="bg-white bg-cover h-skreen">
-        <div className="m-0">
+    <div className="flex bg-gray-500">
+      <Sidebar />
+      <div className="flex flex-col min-h-max">
+        <header>
+          <div className="bg-white bg-cover">
+            <div className="m-0">
 
-          <div className="flex items-center justify-center bg-green-300  h-14 rounded-b text-pink-300">
-            <img src={Logo} width="80" height="80" alt="@" />
-            <h1>Benefit</h1>
+              <div className="flex items-center justify-center bg-gray-500  text-3xl h-14 text-pink-300  ">
+                {/* <img src={Logo} width="80" height="80" alt="@" /> */}
+                <h1 className="text-4xl ">Benefit</h1>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <main>
+          <div>
+            <Gallery img={Evroopt} />
           </div>
 
-          <Sidebar />
+          <div className="bg-gray-200 h-40 rounded-3xl mx-10 flex flex-wrap">
 
-          <div className="bg-green-300 h-72 rounded-3xl m-10">
-            <h1 className="font-serif text-center "> Benefit - поиск выгодных предложений в магазинах</h1>
-            <div className="flex justify-between m-5">
+            <div className="flex flex-auto justify-between m-4 ">
               <Card title="Евроопт" img={Evroopt} />
               <Card title="Грин" img={Green} />
-              <Card title="Виталюр" img={Vitalur} />
               <Card title="Емолл" img={Emall} />
               <Card title="Соседи" img={Sosedi} />
               <Card title="Санта" img={Santa} />
@@ -118,8 +126,8 @@ function App() {
               <Card title="Гиппо" img={Gippo} />
             </div>
 
-            <h1 className="text-3xl font-bold underline">Товары</h1>
-            <div className="flex bg-white flex-wrap">
+            {/* <h1 className="text-3xl font-bold underline">Товары</h1> */}
+            <div className="flex  flex-wrap">
 
               {goods.map((product) => (
                 <Good
@@ -132,9 +140,10 @@ function App() {
               ))}
             </div>
           </div>
-        </div>
+        </main>
       </div>
-    </header>
+    </div>
+
   );
 }
 
