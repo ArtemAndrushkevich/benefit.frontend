@@ -93,16 +93,16 @@ const goods = [
 
 function App() {
   return (
-    <div className="flex bg-gray-500">
+    <div className="flex bg-gray-500 ">
       <Sidebar />
-      <div className="flex flex-col min-h-max">
+      <div className="flex flex-col min-h-max ">
         <header>
-          <div className="bg-white bg-cover">
+          <div className="bg-white bg-cover ">
             <div className="m-0">
 
               <div className="flex items-center justify-center bg-gray-500  text-3xl h-14 text-pink-300  ">
                 {/* <img src={Logo} width="80" height="80" alt="@" /> */}
-                <h1 className="text-4xl ">Benefit</h1>
+                <h1 className="text-4xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">Benefit</h1>
               </div>
             </div>
           </div>
